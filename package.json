@@ -1,0 +1,16 @@
+{
+  "name": "temperaturemonitor",
+  "version": "1.0.0",
+  "description": "Temperature Monitor",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CHIU TSE",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^4.6.7",
+    "query-string": "^6.1.0",
+    "url": "^0.11.0"
+  }
+}
