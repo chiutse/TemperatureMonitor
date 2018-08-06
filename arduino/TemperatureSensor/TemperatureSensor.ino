@@ -8,6 +8,7 @@ String PASS = "<YOUR WIFI PASSWORD>";
 String token = "P7zlANXN30KXQHaDzzjorQ==";
 String HOST = "<YOUR URL>";
 String PORT = "3000";
+float updateInterval = 30000;
 SoftwareSerial esp8266(RX, TX);
 
 #define DHTPIN 7     // what pin we're connected to
@@ -33,7 +34,7 @@ void printResponse() {
 }
 
 void loop() {
-  if (millis() - lastTimeMillis > 30000) {
+  if (millis() - lastTimeMillis > updateInterval) {
     lastTimeMillis = millis();
 
     esp8266.println("AT+CIPMUX=1");
